@@ -1,10 +1,3 @@
-.section{
-    background-color: #fff;
-    padding: 20px 0;
-}
-.section>.container{justify-content: center;}
-.section>.container>div{flex-basis: 1140px;}
-.section>.container>div>div{margin-bottom: 50px;}
 .h6{
     color: #43c49d;
     font-weight: 700;
@@ -58,4 +51,12 @@
 .warning>i{
     color: #ff0000;
     margin-right: 10px;
+}
+@media (max-width: 576px){
+    .h1{font-size: 20px;}
+    .h1::after{
+        width: 35px;
+        height: 5px;
+    }
+    .button{font-size: 15px;}
 }

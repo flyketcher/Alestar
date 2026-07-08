@@ -1,0 +1,104 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.registration{
+    background-image: url('../../assets/Tamozhennoe-oformlenie-gruzov-i-tovarov_1x.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    flex-basis: 380px;
+    padding: 100px 30px;
+}
+.registration::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#363643;
+    z-index: 1;
+    transition: 0.2s ease-in;
+}
+.registration>*{
+    position: relative;
+    z-index: 2;
+}
+.registration:hover::after{background-color:rgb(54, 54, 67, 0.7);}
+.turnkey_car{
+    background-image: url('../../assets/avto_sayt_2x_1x.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    flex-basis: 380px;
+    padding: 100px 30px;
+}
+.turnkey_car::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #33333f;
+    z-index: 1;
+    transition: 0.2s ease-in;
+}
+.turnkey_car>h6{
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.turnkey_car>*{
+    position: relative;
+    z-index: 2;
+}
+.turnkey_car:hover::after{background-color: rgb(51, 51, 63, 0.7);}
+.logistics{
+    background-image: url('../../assets/background2_1x.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    flex-basis: 380px;
+    padding: 100px 30px;
+}
+.logistics::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#363643;
+    z-index: 1;
+    transition: 0.2s ease-in;
+}
+.logistics>*{
+    position: relative;
+    z-index: 2;
+}
+.logistics:hover::after{background-color:rgb(54, 54, 67, 0.7);}
+.img{margin-bottom: 20px;}
+.title{
+    color: #ffffff;
+    line-height: 1.2;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+.text{
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.button{
+    color: #43c49d;
+    font-size: 15px;
+    font-weight: 700;
+}
+.button:hover{color: #ffffff;}
+@media (max-width: 768px){
+    .title{font-size: 16px;}
+    .button{font-size: 13px;}
+}

@@ -1,0 +1,18 @@
+.info{
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+.info>h5{
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    max-width: 700px;
+    padding-top: 15px;
+}
+.h5{
+    font-weight: 400;
+    color: #ffffff;
+    max-width: 670px;
+    text-align: center;
+}

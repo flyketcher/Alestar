@@ -1,16 +1,16 @@
-import '../App.css'
-import Alestar from '../assets/алестар.png'
+import styles from './Header.module.css'
+import Alestar from '../../assets/алестар.png'
 import { useState,useEffect } from 'react'
 function Header(){
     const [headerState,setHeaderState] = useState('');
     useEffect(()=>{
         function handleScroll(){
             if(window.scrollY > 250)
-                setHeaderState(' visible');
+                setHeaderState(styles.visible);
             else if(window.scrollY < 150)
                 setHeaderState('')
             else
-                setHeaderState(' hidden')
+                setHeaderState(styles.hidden)
         }
         window.addEventListener('scroll',handleScroll)
         return()=>{
@@ -20,26 +20,26 @@ function Header(){
     return(
         <header>
             <div className="container">
-                <div className="header-main">
-                    <div className="logo">
+                <div className={styles.main}>
+                    <div className={styles.logo}>
                         <img src={Alestar} alt="алестар.png" height="100%" width="100%"/>
                     </div>
                     <div className="call_number">
-                        <span className="action_name">ПОЗВОНИТЬ</span>
-                        <a href="#" className="action_info">+7 777 777-77-77</a>
+                        <span className={styles.name}>ПОЗВОНИТЬ</span>
+                        <a href="#" className={styles.info}>+7 777 777-77-77</a>
                         </div>
-                    <div className="send_email">
-                        <span className="action_name">ОТПРАВИТЬ ПИСЬМО</span>
-                        <a href="#" className="action_info">office@alestar.com</a>
+                    <div className={styles.email}>
+                        <span className={styles.name}>ОТПРАВИТЬ ПИСЬМО</span>
+                        <a href="#" className={styles.info}>office@alestar.com</a>
                     </div>
                     <div className="send_Whatsapp">
-                        <span className="action_name">НАПИСАТЬ В WHATSAPP</span>
-                        <a href="#" className="action_info">WHATSAPP</a>
+                        <span className={styles.name}>НАПИСАТЬ В WHATSAPP</span>
+                        <a href="#" className={styles.info}>WHATSAPP</a>
                     </div>
                 </div>
             </div>
-            <div className="border-line"/>
-            <div className={`header-menu${headerState}`}>
+            <div className={styles.line}/>
+            <div className={`${styles.menu} ${headerState}`}>
                 <div className="container">
                     <nav>
                         <ul>

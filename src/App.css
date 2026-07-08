@@ -25,52 +25,6 @@ body{
 }
 .container{display: flex;}
 header{background-color: #e9e1d6;}
-.header-main{
-    padding: 20px 0;
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-.logo{
-    max-width: 300px;
-    height: auto;
-}
-.action_info{
-    font-weight: 700;
-    font-size: 25px;
-    display: block;
-}
-.action_info:hover{text-decoration: underline;}
-.action_name{
-    font-weight: 700;
-    color: #1b5745;
-}
-.send_email{
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 0 1px 0 1px;
-    padding: 0 30px;
-}
-.border-line{
-    height: 1px;
-    background-color: #ffffff;
-}
-.header-menu{
-    background-color: #e9e1d6;
-    max-height: 64px;
-    overflow: hidden;
-    transition: max-height 0.3s;
-}
-.header-menu.hidden{max-height: 0;}
-.header-menu.visible{
-    box-shadow: 0 1px 5px 0 #000000;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    max-height: 64px;
-    z-index: 3;
-}
 nav{
     padding: 20px 0;
     display: flex;
@@ -93,21 +47,6 @@ a{
     color: #000000;
 }
 li>a:hover{color: #1b5745;}
-.burger-menu{
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-}
-.burger-line{
-    width: 28px;
-    height: 2px;
-    background: #333;
-    border-radius: 2px;
-    margin-bottom: 5px;
-    transition: all 0.3s;
-}
 main{
     background-color: #ebeff2;
     padding: 100px 0;
@@ -121,24 +60,6 @@ main{
     font-size: 50px;
     font-weight: 700;
     color: #9e9e9e;
-    text-align: center;
-}
-.banner-info{
-    font-weight: 700;
-    color: #ffffff;
-    text-align: center;
-}
-.banner-info>h5{
-    font-weight: 700;
-    color: #ffffff;
-    text-align: center;
-    max-width: 700px;
-    padding-top: 15px;
-}
-.banner>div>h5{
-    font-weight: 400;
-    color: #ffffff;
-    max-width: 670px;
     text-align: center;
 }
 .button-contact{
@@ -156,41 +77,6 @@ main{
     padding: 70px 0;
 }
 #about_us>.container{display: block;}
-.about_us-container{
-    display: flex;
-    justify-content: center;
-}
-.about_us-info>p{
-    max-width: 600px;
-    margin-bottom: 50px;
-}
-.about_us-info>h1{margin-bottom: 20px;}
-.about_us-info>h6{
-    color: #1b5745;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-.about_us-adv{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    margin-bottom: 70px;
-}
-.about_us-adv>p{max-width: 550px;}
-.about_us-adv-img{
-    height: 75px;
-    width: 75px;
-    min-width: 75px;
-    min-height: 75px;
-}
-.about_us-img{
-    display: flex;
-    align-items: center;
-}
-.about_us-button{
-    display: flex;
-    justify-content: center;
-}
 #services{
     background-color: rgba(26, 86, 68, 0.8);
     padding: 70px 0;
@@ -210,106 +96,6 @@ main{
     margin-top: 20px;
     margin-bottom: 40px;
 }
-.services-container{
-    display: flex;
-    flex-wrap: wrap;
-}
-.service-registration{
-    background-image: url('./assets/Tamozhennoe-oformlenie-gruzov-i-tovarov_1x.jpeg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    text-align: center;
-    flex-basis: 380px;
-    padding: 100px 30px;
-}
-.service-registration::after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:#363643;
-    z-index: 1;
-    transition: 0.2s ease-in;
-}
-.service-registration>*{
-    position: relative;
-    z-index: 2;
-}
-.service-registration:hover::after{background-color:rgb(54, 54, 67, 0.7);}
-.service-turnkey_car{
-    background-image: url('./assets/avto_sayt_2x_1x.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    text-align: center;
-    flex-basis: 380px;
-    padding: 100px 30px;
-}
-.service-turnkey_car::after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #33333f;
-    z-index: 1;
-    transition: 0.2s ease-in;
-}
-.service-turnkey_car>h6{
-    color: #ffffff;
-    margin-bottom: 30px;
-}
-.service-turnkey_car>*{
-    position: relative;
-    z-index: 2;
-}
-.service-turnkey_car:hover::after{background-color: rgb(51, 51, 63, 0.7);}
-.service-logistics{
-    background-image: url('./assets/background2_1x.jpeg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    text-align: center;
-    flex-basis: 380px;
-    padding: 100px 30px;
-}
-.service-logistics::after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:#363643;
-    z-index: 1;
-    transition: 0.2s ease-in;
-}
-.service-logistics>*{
-    position: relative;
-    z-index: 2;
-}
-.service-logistics:hover::after{background-color:rgb(54, 54, 67, 0.7);}
-.img-service{margin-bottom: 20px;}
-.service-title{
-    color: #ffffff;
-    line-height: 1.2;
-    font-weight: 800;
-    margin-bottom: 25px;
-}
-.service-p{
-    color: #ffffff;
-    margin-bottom: 30px;
-}
-.service-button{
-    color: #43c49d;
-    font-size: 15px;
-    font-weight: 700;
-}
-.service-button:hover{color: #ffffff;}
 .about_services{
     background-color: #fff;
     padding: 20px 0;
@@ -317,85 +103,12 @@ main{
 .about_services>.container{justify-content: center;}
 .about_services>.container>div{flex-basis: 1140px;}
 .about_services>.container>div>div{margin-bottom: 50px;}
-.about_services-h6{
-    color: #43c49d;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-.about_services-h1{
-    font-weight: 700;
-    font-size: 35px;
-    word-break: break-all;
-}
-.about_services-h1::after{
-    content: "";
-    display: block;
-    width: 70px;
-    height: 10px;
-    background-color: #1b5745;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-.description-button{
-    font-size: 25px;
-    text-decoration: underline;
-    border: none;
-    background: none;
-}
-.description{
-    max-height: 0;
-    transition: max-height 0.5s;
-    overflow: hidden;
-}
-.description>div{padding: 20px;}
-.description.active{
-    max-height: 10000px;
-    transition: max-height 1.5s;
-}
-.description>div>p{margin-bottom: 14px;}
-.description>div>h6{
-    font-weight: bold;
-    margin-bottom: 14px;
-}
-.description>div>p>span{font-weight: bold;}
-.description>div>ul{
-    display: block;
-    padding-left: 40px;
-    margin-bottom: 14px;
-}
-.warning{
-    display: flex;
-    margin-bottom: 10px;
-}
-.warning>i{
-    color: #ff0000;
-    margin-right: 10px;
-}
 .advantages{
     background-color: rgba(26, 86, 68, 0.8);
     padding: 70px 0;
 }
 .advantages>.container{justify-content: center;}
 .advantages>.container>div{flex-basis: 1150px;}
-.advantages-container{
-    display: grid;
-    grid-template: 1fr 1fr / repeat(auto-fit, minmax(530px, 1fr));
-    gap: 50px;
-}
-.advantages-content{
-    display: flex;
-    gap: 40px;
-}
-.advantage-logo{
-    margin-top: 25px;
-    
-}
-.advantage-h5{
-    color: #ffffff;
-    margin-bottom: 12px;
-    font-weight: 700;
-}
-.advantage-info>p{color: #ffffff;}
 #contacts{
     background-image: url('./assets/Алестар-logo.png');
     background-size: cover;
@@ -422,125 +135,14 @@ main{
 }
 #contacts>.container,#contacts-background>.container{justify-content: center;}
 #contacts>.container>div{flex-basis: 100%;}
-.contacts-text{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 70px;
-}
-.contacts-text>span>h2{
-    font-size: 35px;
-    font-weight: 500;
-    max-width: 1100px;
-}
-.contacts-text>span>p{font-size: 18px;}
-.contacts-text>span>h2::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 5px;
-    background-color: #1b5745;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.contacts-button{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
-}
-.contacts-background{background-color: #e9e1d6;}
-.contacts-info{
-    background-color: #e9e1d6;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-    flex-basis: 100%;
-}
-.contacts-info-item{
-    text-align: center;
-    flex-basis: 380px;
-}
-.contacts-info-item:nth-child(2){
-    border-style: solid;
-    border-color: #1b5745;
-    border-width: 0 1px 0 1px;
-}
-.contacts-info-item>img{margin-bottom: 20px;}
-.contacts-info-item:nth-child(2)>img{margin-bottom: 30px;}
-.contacts-info-item>span{
-    color: #1b5745;
-    font-size: 14px;
-}
-.contacts-info-item>a{
-    font-weight: 700;
-    font-size: 15px;
-    color: #1b5745;
-}
-.contacts-info-item>a:hover{text-decoration: underline;}
-footer{
-    background-color: #000000;
-    padding: 30px 0;
-}
-footer>.container{justify-content: center;}
-.copyright{
-    color: #ffffff;
-    text-align: center;
-}
 @media (max-width: 768px){
-    .header-main{
-        flex-direction: column;
-        gap: 0;
-    }
-    .action_name{font-size: 10px;}
-    .action_info{font-size: 20px}
-    .send_email{
-        border: none;
-        padding: 0;
-    }
-    .about_us-img>img{
-        width: 500px;
-        height: 400px;
-    }
-    .about_us-container{
-        flex-direction: column;
-        text-align: center;
-    }
-    .about_us-img{
-        justify-content: center;
-        margin-bottom: 30px;
-    }
-    .about_us-adv{flex-direction: column;}
     .button-contact{font-size: 10px;}
     .services-h1{font-size: 20px;}
     .services-h1::after{
         width: 50px;
         height: 5px; 
     }
-    .service-title{font-size: 16px;}
-    .service-button{font-size: 13px;}
-    .advantage-h5{font-size: 15px;}
-    .contacts-text>span>h2{font-size: 20px;}
-    .contacts-info{flex-direction: column;}
-    .contacts-info-item{flex-basis: 200px;}
-    .contacts-info-item:nth-child(2){border: none;}
 }
 @media (max-width: 576px){
-    .about_us-img>img{
-        width: 100% !important;
-        height: 100% !important;
-    }
     .banner>div>h1{font-size: 30px;}
-    .about_services-h1{font-size: 20px;}
-    .about_services-h1::after{
-        width: 35px;
-        height: 5px;
-    }
-    .description-button{font-size: 15px;}
-    .advantages-container{grid-template: 1fr  / 1fr;}
-}
-@media (max-width: 992px){
-    .about_us-img>img{
-        width: 400px;
-        height: 300px;
-    }
 }

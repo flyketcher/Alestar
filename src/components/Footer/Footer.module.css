@@ -3,7 +3,7 @@ footer{
     padding: 30px 0;
 }
 footer>.container{justify-content: center;}
-.p{
+.copyright{
     color: #ffffff;
     text-align: center;
 }

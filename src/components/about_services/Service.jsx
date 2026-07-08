@@ -5,7 +5,7 @@ function Service({title,children}){
     return(
         <>
             <button className={styles.button} onClick={()=>setActiveState(!activeState)}>{title}</button>
-            <div className={`${styles.description} ${activeState?styles.active:styles.description}`}>
+            <div className={`${styles.description} ${activeState?styles.active:''}`}>
                 {children}
             </div>
         </>
