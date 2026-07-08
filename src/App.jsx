@@ -6,7 +6,7 @@ import Services from './components/services'
 import About_services from './components/about_services/about_services'
 import Advantages from './components/advantages'
 import Contacts from './components/contacts'
-import Footer from './components/Footer'
+import Footer from './components/Footer/Footer'
 import './App.css'
 
 function App() {

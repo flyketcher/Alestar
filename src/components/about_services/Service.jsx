@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import '../../App.css'
+import styles from './about_services.module.css'
 function Service({title,children}){
     const [activeState,setActiveState] = useState(false);
     return(
         <>
-            <button className="description-button" onClick={()=>setActiveState(!activeState)}>{title}</button>
-            <div className={activeState?'description active':'description'}>
+            <button className={styles.button} onClick={()=>setActiveState(!activeState)}>{title}</button>
+            <div className={`${styles.description} ${activeState?styles.active:styles.description}`}>
                 {children}
             </div>
         </>
